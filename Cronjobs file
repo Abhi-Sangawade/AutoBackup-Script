@@ -1,0 +1,8 @@
+#Automate with Cron Jobs
+
+# Add the script to cron to run daily at 2 AM:
+crontab -e
+
+# Add following line also
+0 2 * * * /bin/bash /path/to/daily_backup.sh
+
