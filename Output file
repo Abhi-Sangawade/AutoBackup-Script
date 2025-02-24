@@ -1,0 +1,23 @@
+[2025-02-24_12-30-45] Starting backup process...
+Creating backup directory: /var/backups
+Backing up directories: /home/admin /etc /var/log /var/www/html
+Database backup saved to: /var/backups/db_backup_2025-02-24_12-30-45.sql
+Compressing backup files...
+Backup file created: /var/backups/server_backup_2025-02-24_12-30-45.tar.gz
+Uploading backup to AWS S3...
+upload: ./server_backup_2025-02-24_12-30-45.tar.gz to s3://company-backups/server_backup_2025-02-24_12-30-45.tar.gz
+Cleaning up old backups...
+Found and removed old backup: /var/backups/server_backup_2025-02-17_12-30-45.tar.gz
+Logging backup activity...
+Backup completed successfully! Log saved in /var/log/backup.log
+Sending email notification to admin@company.com...
+Email sent successfully.
+
+Contents of /var/log/backup.log
+[2025-02-24_12-30-45] Backup completed successfully!
+Backup file: /var/backups/server_backup_2025-02-24_12-30-45.tar.gz
+Database backup: /var/backups/db_backup_2025-02-24_12-30-45.sql
+Encrypted backup: /var/backups/server_backup_2025-02-24_12-30-45.tar.gz.enc
+Uploaded to S3: s3://company-backups/server_backup_2025-02-24_12-30-45.tar.gz.enc
+Old backup removed: /var/backups/server_backup_2025-02-17_12-30-45.tar.gz
+
